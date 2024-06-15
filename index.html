@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Youssef Badr</title>
+  </head>
+  <body>
+    <div class="container">
+      <video class="video-loop" autoplay loop muted>
+        <source src="video-loop.mp4" type="video/mp4" />
+      </video>
+      <header class="header">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li>
+              <a href="#bio" class="navigation__link navigation__bio">Bio</a>
+            </li>
+            <li>
+              <a href="#skills" class="navigation__link navigation__skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a href="#media" class="navigation__link navigation__media"
+                >Media</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="navigation__link navigation__projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#clients" class="navigation__link navigation__clients"
+                >My Clients</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="navigation__link navigation__contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="toggle">
+          <h3 class="toggle__title">Switch Theme</h3>
+          <input
+            type="checkbox"
+            name="toggle checkbox"
+            class="toggle__checkbox"
+            id="toggle"
+          />
+          <label for="toggle" class="toggle__label"></label>
+        </div>
+      </header>
+
+      <section id="bio" class="bio section">
+        <div class="bio__data">
+          <h1 class="bio__heading">
+            Hi There, I’M A Passionate Software Engineer
+          </h1>
+          <p class="bio__objective">
+            My name is <span class="bio__name">Mohamed Abusrea</span>, a
+            co-founder of
+            <a href="https://www.almdrasa.com/" class="bio__almdrasa"
+              >Almdrasa.com</a
+            >, Software Engineer and a content creator who publish content on
+            <a href="https://www.facebook.com/m.abusre3" class="bio__facebook"
+              >Facebook</a
+            >,
+            <a href="https://x.com/mohamed_abusrea" class="bio__twitter"
+              >Twitter</a
+            >,
+            <a
+              href="https://www.linkedin.com/in/mohamedabusrea/"
+              class="bio__linkedin"
+              >LinkedIn</a
+            >
+            and
+            <a
+              href="https://www.youtube.com/c/MohamedAbusrea/"
+              class="bio__youtube"
+              >Youtube</a
+            >.
+          </p>
+          <a href="#contact" class="bio__links say-hi-link">Say Hi</a>
+          <a href="mohamedAbusreaResume.pdf" class="bio__links find-out-link">
+            Download CV <span class="bio__arrow">⇣</span>
+          </a>
+        </div>
+        <div class="bio__pic-content">
+          <img
+            class="bio__pic"
+            src="images/personal-pic.png"
+            alt="image of mohammed abusrea"
+          />
+        </div>
+      </section>
+
+      <section id="skills" class="skills section section--with-bg">
+        <h2 class="h2-heading">Skills</h2>
+
+        <ul class="skills__list">
+          <li class="skills__item">
+            <h2 class="skills__title">HTML</h2>
+            <span class="skills__years">8 years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">CSS</h2>
+            <span class="skills__years">8 years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Javascript</h2>
+            <span class="skills__years">8 years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">React</h2>
+            <span class="skills__years">4 years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">Redux</h2>
+            <span class="skills__years">3 years</span>
+          </li>
+          <li class="skills__item">
+            <h2 class="skills__title">React Testing Library</h2>
+            <span class="skills__years">1 years</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="media" class="media section">
+        <video
+          class="media__video"
+          poster="images/thumbnail.jpg"
+          controls
+          muted
+        >
+          <source src="video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2 class="h2-heading">MY FEATURED<br />PROJECTS</h2>
+        <div class="projects__main">
+          <img
+            class="projects__img"
+            src="images/project-1.jpg"
+            alt="quran tab Extension"
+          />
+          <div class="projects__data">
+            <h3 class="h3-heading">Quran Tab<br />Extension</h3>
+            <p class="projects__description">
+              Quran Tab is an Islamic new tab page that will keep you inspired
+              by a verse from the Quran every time you open a new tab that helps
+              you achieve your "Khatma" and keeps you connected with the words
+              of Allah.
+            </p>
+            <a
+              href="https://bit.ly/qt-chrome"
+              class="projects__link"
+              target="_blank"
+              >Chrome Link</a
+            >
+            <span>-</span>
+            <a
+              href="https://bit.ly/qt-edge"
+              class="projects__link"
+              target="_blank"
+              >Edge Link</a
+            >
+          </div>
+
+          <div class="projects__data">
+            <h3 class="h3-heading">Quran Station<br />Extension</h3>
+            <p class="projects__description">
+              Small extension that gives you access to over 100 stations to help
+              you listen to the Quran from your favorite reciters easily
+              Quran-Station has over 100 stations to help you listen to the
+              Quran from your favorite reciters in a quick and easy way.
+            </p>
+            <a
+              href="https://bit.ly/qt-chrome"
+              class="projects__link"
+              target="_blank"
+              >Chrome Link</a
+            >
+            <span>-</span>
+            <a
+              href="https://bit.ly/qt-firefox"
+              class="projects__link"
+              target="_blank"
+              >Firefox link</a
+            >
+            <span>-</span>
+            <a
+              href="https://bit.ly/qt-edge"
+              class="projects__link"
+              target="_blank"
+              >Edge Link</a
+            >
+          </div>
+          <img
+            class="projects__img"
+            src="images/project-2.jpg"
+            alt="quran station Extension"
+          />
+        </div>
+      </section>
+
+      <section id="clients" class="clients section section--with-bg">
+        <h2 class="h2-heading">What My<br />Clients Says.</h2>
+        <div class="clients__opinions">
+          <div class="clients__wrapper">
+            <p class="clients__opinion">
+              Abusrea has the advantageous ability to understand a problem and
+              implement code to a high standard within the deadline. Each
+              project we have worked on, I know I can completely trust Abusrea
+              to own his tasks and complete what is needed when asked of him.
+            </p>
+            <p class="clients__opinion">
+              Mohamed will patiently listen to you and give you his own Ideas as
+              well, and in the end, he comes up with something completely
+              different from what you’re expecting, but the good news is, you’ll
+              always love it.
+            </p>
+            <p class="clients__opinion">
+              I had a chance to work closely with Mohamed as a direct manager
+              from hist first day at DeliveryHero until my last day there
+              (6+months). Mohamed's biggest strengths that I admire are taking
+              initiatives on personal and team level, and driving them.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section">
+        <div>
+          <p class="contact__description">
+            Feel free to reach out to me any time. I prefer to talk over email,
+            especially since we may be a few time zones away.
+          </p>
+          <a class="contact__email" href="mailto:example@gmail.com"
+            >example@gmail.com</a
+          >
+          <div class="contact__socials">
+            <a
+              href="https://www.facebook.com/yousef.mohamed.587"
+              class="contact__social"
+            >
+              <img class="icon" src="images/brand/facebook.png" alt="facebook icon" />
+            </a>
+            <a href="https://x.com/Y0ussefBadr" class="contact__social">
+              <img class="icon" src="images/brand/twitter.png" alt="twitter icon" />
+            </a>
+            <a
+              href="https://youtube.com/@dormodo2326?si=8QszasaxFrv9dqjx"
+              class="contact__social"
+            >
+              <img class="icon" src="images/brand/youtube.png" alt="youtube icon" />
+            </a>
+            <a href="https://github.com/DORMODO" class="contact__social">
+              <img class="icon" src="images/brand/github.png" alt="github icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/youssef-badr-b55748312/"
+              class="contact__social"
+            >
+              <img class="icon" src="images/brand/linkedin.png" alt="LinkedIn icon" />
+            </a>
+          </div>
+        </div>
+        <div class="contact__form-content">
+          <h2 class="h2-heading">Let’s Work Together!</h2>
+          <form action="results.html">
+            <div class="contact__inputs">
+              <input
+                type="text"
+                class="contact__input"
+                placeholder="Full name"
+                name="fullName"
+                required
+              />
+              <input
+                type="tel"
+                class="contact__input"
+                placeholder="Phone No."
+                name="telephone"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                required
+              />
+            </div>
+            <textarea
+              class="contact__input contact__textarea"
+              name="description"
+              id="description"
+              rows="1"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <input type="submit" class="contact__button" value="Send Message" />
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">© 2024 by Youssef Badr</footer>
+    </div>
+  </body>
+</html>
