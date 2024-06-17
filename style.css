@@ -171,6 +171,10 @@ body,
 }
 
 /* Navigation */
+.navigation {
+  transition: var(--transition-timing);
+}
+
 .navigation__list {
   display: flex;
   align-items: center;
@@ -196,11 +200,11 @@ body,
 .container:has(#clients:target) .navigation__clients,
 .container:has(#contact:target) .navigation__contact {
   /*! This rule targets .navigation__bio if its ancestor .container contains an element with the ID bio that is currently targeted in the URL. */
-  background-color: var(--clr-green);
-  color: var(--clr-text);
-  border-radius: 2rem;
-  padding: 1rem;
-  font-weight: var(--fw-bold);
+  color: var(--clr-green);
+}
+
+.burger-menu__checkbox {
+  display: none;
 }
 
 /* Toggle Component */
@@ -544,7 +548,8 @@ textarea::placeholder {
   font-weight: var(--fw-medium);
 }
 
-input, textarea {
+input,
+textarea {
   color: var(--clr-text);
 }
 
@@ -577,7 +582,7 @@ html:has(.toggle__checkbox:checked) {
 
 /* Responsive */
 
-@media (max-width: 1000px)  {
+@media (max-width: 1000px) {
   html {
     font-size: 8px;
   }
@@ -630,8 +635,70 @@ html:has(.toggle__checkbox:checked) {
 }
 
 @media (max-width: 500px) {
+
   .container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .header::before {
+    z-index: 0;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.75rem;
+    z-index: 0;
+  }
+
+  .burger-menu__bar {
+    height: 0.3rem;
+    width: 4.375rem;
+    background-color: var(--clr-text);
+    transition: var(--transition-timing);
+  }
+
+  .burger-menu__checkbox:checked+.navigation {
+    top: 100%;
+  }
+
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(1) {
+    transform: translateY(10px) rotate(40deg);
+  }
+
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-40deg);
+  }
+
+  .navigation {
+    position: absolute;
+    padding: 3rem 0;
+    width: 100%;
+    top: 0;
+    background-color: var(--clr-background);
+    border-bottom: 0.1rem solid var(--clr-text);
+    z-index: -1;
+    width: 100vw;
+  }
+
+  .navigation__list {
+    justify-content: center;
+  }
+
+  .toggle {
+    padding: 3rem 0;
+    z-index: 1;
   }
 }
 
