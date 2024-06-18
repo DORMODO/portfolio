@@ -1,0 +1,109 @@
+/* Bio */
+@import "./mixins";
+
+.bio {
+  @include twoColumns(7.4rem, 0);
+
+  & .bio__heading {
+    font-size: var(--fs-70);
+    font-weight: var(--fw-bold);
+  }
+
+  & .bio__objective {
+    font-family: var(--ff-poppins);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-20);
+    margin: 3rem 0 8rem;
+  }
+
+  & .bio__name {
+    font-weight: var(--fw-semi-bold);
+  }
+
+  & .bio__almdrasa {
+    color: var(--clr-green);
+  }
+
+  & .bio__facebook {
+    color: var(--clr-blue);
+  }
+
+  & .bio__twitter {
+    color: var(--clr-light-blue);
+  }
+
+  & .bio__linkedin {
+    color: var(--clr-dark-blue);
+  }
+
+  & .bio__youtube {
+    color: var(--clr-red);
+  }
+
+  & .bio__links {
+    font-size: 2.4rem;
+    font-weight: var(--fw-semi-bold);
+    text-decoration: none;
+  }
+
+  & .say-hi-link {
+    background-color: var(--clr-link-bg);
+    color: var(--clr-white);
+    padding: 0.7rem 4.7rem;
+  }
+
+  & .find-out-link {
+    padding: 0.7rem 0;
+    -webkit-margin-start: 1.4rem;
+    margin-inline-start: 1.4rem;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0.5rem);
+  }
+
+  35% {
+    transform: translateY(-0.5rem);
+  }
+
+  70% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bio__arrow {
+  display: inline-block;
+  font-weight: var(--fw-bold);
+  animation: jump 1s infinite alternate ease-in-out;
+}
+
+.bio__pic-content {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  justify-self: end;
+}
+
+.bio__pic-content::before {
+  content: "";
+  position: absolute;
+  background-color: var(--clr-box-img);
+  width: 100%;
+  height: 46rem;
+  z-index: -1;
+  border-radius: 1.8rem;
+  box-shadow: 2px 8.5px 40px rgba(0, 0, 0, 0.15);
+}
+
+.bio__pic {
+  max-width: 100%;
+  width: 42.7rem;
+}
+
+/* End Bio */

@@ -1,0 +1,72 @@
+/* Global Styles */
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 11rem;
+}
+
+body,
+[type="submit"] {
+  font-size: 1.6rem;
+  font-family: var(--ff-raleway);
+  background-color: var(--clr-background);
+  color: var(--clr-text);
+  overflow-x: hidden;
+  border: 0px;
+}
+
+.container {
+  display: grid;
+  row-gap: 11rem;
+  margin: 0 auto;
+  max-width: calc(var(--container-width) + var(--gutter) * 2);
+  padding-inline: var(--gutter);
+}
+
+.video-loop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.08;
+  z-index: -1;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: start;
+}
+
+.section--with-bg {
+  position: relative;
+  padding: 11rem 0;
+}
+
+.section--with-bg::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-color: var(--clr-gray);
+  justify-self: center;
+  z-index: -1;
+}
+
+.h2-heading {
+  font-size: var(--fs-65);
+  font-weight: var(--fw-bold);
+  grid-column: 1 / -1;
+  margin-bottom: 8.7rem;
+  text-transform: uppercase;
+}
+
+.h3-heading {
+  font-size: var(--fs-38);
+  font-weight: var(--fw-bold);
+  grid-column: 1 / -1;
+  margin-bottom: 2.5rem;
+}
+
+/* End Global Styles */

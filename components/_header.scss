@@ -1,0 +1,114 @@
+/* Header */
+.header {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--clr-background);
+  z-index: 1;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  border-bottom: 0.1rem solid var(--clr-input-border);
+  background-color: var(--clr-background);
+  top: 0.1rem;
+  z-index: -1;
+}
+
+/* Navigation */
+.navigation {
+  transition: var(--transition-timing);
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+  text-decoration: none;
+  font-weight: var(--fw-medium);
+}
+
+.navigation__link:hover,
+.navigation__link:active {
+  text-decoration: underline;
+  color: var(--clr-text);
+}
+
+.container:has(#bio:target) .navigation__bio,
+.container:has(#skills:target) .navigation__skills,
+.container:has(#media:target) .navigation__media,
+.container:has(#projects:target) .navigation__projects,
+.container:has(#clients:target) .navigation__clients,
+.container:has(#contact:target) .navigation__contact {
+  /*! This rule targets .navigation__bio if its ancestor .container contains an element with the ID bio that is currently targeted in the URL. */
+  color: var(--clr-green);
+}
+
+.burger-menu__checkbox {
+  display: none;
+}
+
+/* Toggle */
+.toggle {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.toggle__title {
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-18);
+}
+
+.toggle__label {
+  display: block;
+  position: relative;
+  background-color: var(--clr-black);
+  border-radius: 1.5rem;
+  width: 4.5rem;
+  height: 2.2rem;
+  cursor: pointer;
+  padding: .3rem .4rem;
+  transition: var(--transition-timing);
+}
+
+.toggle__label::after {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  display: block;
+  background-color: var(--clr-white);
+  transition: var(--transition-timing);
+}
+
+.toggle__checkbox {
+  display: none;
+}
+
+.toggle__checkbox:checked+.toggle__label {
+  background-color: var(--clr-white);
+  /*? Changes the background color of the label when the checkbox is checked.*/
+}
+
+.toggle__checkbox:checked+.toggle__label::after {
+  transform: translateX(2.1rem);
+  /*? Moves the circle to the right when the checkbox is checked. */
+  background-color: var(--clr-green);
+  /*? Changes the circle's background color to green when the checkbox is checked. */
+}
+
+/* End Toggle */
+
+/* End Header */

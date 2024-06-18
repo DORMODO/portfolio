@@ -1,0 +1,42 @@
+:root {
+  --container-width: 119rem;
+  --gutter: 2rem;
+
+  --clr-black: #000;
+  --clr-white: #fff;
+  --clr-blue: #2374e1;
+  --clr-light-blue: #1d9bf0;
+  --clr-dark-blue: #0a66c2;
+  --clr-darker-blue: #143ce8;
+  --clr-red: #ff0000;
+  --clr-green: #03a696;
+  --clr-gray: #f6f6f6;
+  --clr-dark-green: #42959b;
+
+  --clr-background: var(--clr-white);
+  --clr-text: var(--clr-black);
+  --clr-box-img: var(--clr-black);
+  --clr-link-bg: var(--clr-black);
+  --clr-input-border: var(--clr-black);
+  --clr-placeholder: var(--clr-black);
+
+  --ff-raleway: "Raleway", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --fs-70: 7rem;
+  --fs-65: 6.5rem;
+  --fs-40: 4rem;
+  --fs-38: 3.8rem;
+  --fs-24: 2.4rem;
+  --fs-22: 2.2rem;
+  --fs-20: 2rem;
+  --fs-18: 1.8rem;
+  --fs-15: 1.5rem;
+
+  --transition-timing: 0.3s;
+}

@@ -1,0 +1,22 @@
+/* clients */
+
+.clients__opinions {
+  grid-column: 1 / -1;
+  font-size: var(--fs-40);
+  line-height: 1.7;
+}
+
+.clients__wrapper {
+  display: flex;
+  gap: 10rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.clients__opinion {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+/* End clients */
