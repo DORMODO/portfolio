@@ -29,24 +29,6 @@ To run this portfolio locally on your machine, follow these steps:
       ```
     - This command will download all the files from the GitHub repository to a directory named `portfolio` on your local machine.
 
-2. **Navigate to the project directory:**
-    - After cloning the repository, you need to move into the project directory to run commands specific to this project.
-    - Use the `cd` (change directory) command to navigate into the project folder:
-      ```bash
-      cd portfolio
-      ```
-3. **Start the development server:**
-    - You can start the development server to view and test your portfolio locally.
-    - Run the following command to start the server:
-      ```bash
-      npm start
-      ```
-    - This command typically runs a script defined in your `package.json` file that starts a local web server and opens your portfolio in the default web browser.
-    - The server will usually be accessible at `http://localhost:3000` (or another specified port), where you can see your portfolio in action and make changes in real-time.
-      
-These steps should help you set up and run your portfolio locally.
-
-
 ## Usage
 
 - **Home Page:** View a summary of my skills and a brief introduction.
