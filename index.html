@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,9 +19,9 @@
   </head>
   <body>
     <div class="container">
-      <video class="video-loop" autoplay loop muted>
+      <!-- <video class="video-loop" autoplay loop muted>
         <source src="assets/video-loop.mp4" type="video/mp4" />
-      </video>
+      </video> -->
       <header class="header">
         <label class="burger-menu" for="menu">
           <div class="burger-menu__bar"></div>
@@ -70,7 +71,12 @@
             class="toggle__checkbox"
             id="toggle"
           />
-          <label for="toggle" class="toggle__label"></label>
+          <label
+            for="toggle"
+            class="toggle__label"
+            role="button"
+            tabindex="0"
+          ></label>
         </div>
       </header>
 
@@ -114,7 +120,7 @@
         <div class="bio__pic-content">
           <img
             class="bio__pic"
-            src="images/personal-pic.png"
+            src="images/personal-pic2.png"
             alt="image of mohammed abusrea"
           />
         </div>
@@ -122,33 +128,18 @@
 
       <section id="skills" class="skills section section--with-bg">
         <h2 class="h2-heading">Skills</h2>
+        <div class="skills__filters">
+          <button
+            class="skills__button skills__button--isActive"
+            data-type="all"
+          >
+            All
+          </button>
+          <button class="skills__button" data-type="frontend">Frontend</button>
+          <button class="skills__button" data-type="backend">Backend</button>
+        </div>
 
-        <ul class="skills__list">
-          <li class="skills__item">
-            <h2 class="skills__title">HTML</h2>
-            <span class="skills__years">8 years</span>
-          </li>
-          <li class="skills__item">
-            <h2 class="skills__title">CSS</h2>
-            <span class="skills__years">8 years</span>
-          </li>
-          <li class="skills__item">
-            <h2 class="skills__title">Javascript</h2>
-            <span class="skills__years">8 years</span>
-          </li>
-          <li class="skills__item">
-            <h2 class="skills__title">React</h2>
-            <span class="skills__years">4 years</span>
-          </li>
-          <li class="skills__item">
-            <h2 class="skills__title">Redux</h2>
-            <span class="skills__years">3 years</span>
-          </li>
-          <li class="skills__item">
-            <h2 class="skills__title">React Testing Library</h2>
-            <span class="skills__years">1 years</span>
-          </li>
-        </ul>
+        <ul class="skills__list"></ul>
       </section>
 
       <section id="media" class="media section">
@@ -334,7 +325,7 @@
               />
             </div>
             <textarea
-              class="contact__input contact__textarea"
+              class="contact__input contact__textarea exclude-textarea"
               name="description"
               id="description"
               rows="1"
@@ -348,5 +339,28 @@
 
       <footer class="footer">© 2024 by Youssef Badr</footer>
     </div>
+    <script src="scripts/script.js"></script>
+    <!-- <script src="scripts/html-from-string.js"></script> -->
+    <!-- <script src="scripts/challenge-1.js"></script> -->
+    <!-- <script src="scripts/events.js"></script> -->
+    <!-- <script src="scripts/event-object.js"></script> -->
+    <!-- <script src="scripts/bubblingAndCapture.js"></script> -->
+    <!-- <script src="scripts/prevent-default.js"></script> -->
+    <!-- <script src="scripts/if-statment.js"></script> -->
+    <!-- <script src="scripts/truthy-falsy-values.js"></script> -->
+    <!-- <script src="scripts/case-switch.js"></script> -->
+    <!-- <script src="scripts/intervals-timers.js"></script> -->
+    <!-- <script src="scripts/objects.js"></script> -->
+    <!-- <script src="scripts/value-reference.js"></script> -->
+    <!-- <script src="scripts/maps.js"></script> -->
+    <!-- <script src="scripts/arrays.js"></script> -->
+    <!-- <script src="scripts/array-static-methods.js"></script> -->
+    <!-- <script src="scripts/array-instance-methods.js"></script> -->
+    <!-- <script src="scripts/array-callback-methods.js"></script> -->
+    <!-- <script src="scripts/challenge-2.js"></script> -->
+    <!-- <script src="scripts/looping-forEach.js"></script> -->
+    <!-- <script src="scripts/looping-map-find-filter.js"></script> -->
+    <!-- <script src="scripts/looping-reduce.js"></script> -->
+
   </body>
 </html>
