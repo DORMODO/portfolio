@@ -69,7 +69,6 @@ skillsItems.forEach((item) => {
   });
 });
 
-const submitButton = document.querySelector(".contact__button");
 const inputs = document.querySelectorAll(".contact__input");
 
 inputs.forEach((item) => {
